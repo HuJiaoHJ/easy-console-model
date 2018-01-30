@@ -1,0 +1,58 @@
+{
+  "name": "rcmodel",
+  "version": "1.0.0",
+  "description": "H5页面调试面板数据层",
+  "main": "dist/rcmodel.min.js",
+  "scripts": {
+    "cleanup": "rm -rf dist",
+    "build": "yarn run cleanup && webpack",
+    "build:demo": "rm -rf ./demo/dist && NODE_ENV=production webpack --config ./demo/webpack.config.js",
+    "dev": "webpack-dev-server --inline --config ./demo/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuJiaoHJ/rcModel.git"
+  },
+  "author": "hujiao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HuJiaoHJ/rcModel/issues"
+  },
+  "homepage": "https://github.com/HuJiaoHJ/rcModel#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.5.0",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "ejs-compiled-loader": "^1.1.0",
+    "eslint": "^4.12.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^4.0.1",
+    "file-loader": "^1.1.5",
+    "glob": "^7.1.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.9",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "vue-hot-reload-api": "^2.2.4",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^13.5.0",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.9",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1",
+    "webpack-parallel-uglify-plugin": "^1.0.2"
+  },
+  "dependencies": {
+    "querystring": "^0.2.0",
+    "vue": "^2.5.13"
+  }
+}
