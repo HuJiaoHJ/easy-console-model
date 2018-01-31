@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin');
 
 const env = process.env.NODE_ENV || 'development';
 
@@ -68,6 +69,17 @@ const common = {
             template: path.resolve(__dirname, './index.html'),
             inject: false,
             minify: false,
+        }),
+        new ParallelUglifyPlugin({
+            cacheDir: '.cache/',
+            uglifyJS:{
+                output: {
+                    comments: false
+                },
+                compress: {
+                    warnings: false
+                },
+            },
         }),
     ],
     resolve: {
