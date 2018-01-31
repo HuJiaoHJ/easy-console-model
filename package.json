@@ -52,6 +52,7 @@
     "webpack-parallel-uglify-plugin": "^1.0.2"
   },
   "dependencies": {
+    "element-ui": "^2.0.11",
     "querystring": "^0.2.0",
     "vue": "^2.5.13"
   }
