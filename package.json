@@ -2,7 +2,7 @@
   "name": "rcmodel",
   "version": "1.0.0",
   "description": "H5页面调试面板数据层",
-  "main": "dist/rcmodel.min.js",
+  "main": "dist/easy-console.min.js",
   "scripts": {
     "cleanup": "rm -rf dist",
     "build": "yarn run cleanup && webpack",
