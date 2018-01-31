@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import RemoteConsole from '../lib';
+import easyConsole from '../lib';
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -11,7 +11,7 @@ new Vue({
     el: '#app',
     data: {
         test: 'test',
-        remoteConsoleData: RemoteConsole.data,
+        easyConsoleData: easyConsole.data,
     },
     components: {
         vMain,
@@ -42,6 +42,6 @@ new Vue({
         console.log(window.localStorage);
     },
     mounted () {
-        RemoteConsole.updateData();
+        easyConsole.updateData();
     },
 });

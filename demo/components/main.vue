@@ -15,7 +15,7 @@
             <el-col>
                 <el-tabs type="border-card" v-model="activeTab">
                     <el-tab-pane v-for="item in tabs" :key="item" :label="item" :name="item">
-                        <component :is="currentView" :data="remoteConsoleData"></component>
+                        <component :is="currentView" :data="easyConsoleData"></component>
                     </el-tab-pane>
                 </el-tabs>
             </el-col>
@@ -34,7 +34,7 @@ const tabOptions = ['Console', 'Network', 'Element', 'Storage'];
 
 export default {
     props: {
-        remoteConsoleData: {
+        easyConsoleData: {
             type: Object,
             required: true,
         },
