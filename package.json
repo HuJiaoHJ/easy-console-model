@@ -1,8 +1,8 @@
 {
-  "name": "rcmodel",
+  "name": "easy-console-model",
   "version": "1.0.0",
-  "description": "H5页面调试面板数据层",
-  "main": "dist/easy-console.min.js",
+  "description": "Easy Console 是一个H5页面调试工具，而 easy-console-model 用于获取调试信息，为调试工具提供数据",
+  "main": "dist/easy-console-model.min.js",
   "scripts": {
     "cleanup": "rm -rf dist",
     "build": "yarn run cleanup && webpack",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HuJiaoHJ/rcModel.git"
+    "url": "git+https://github.com/HuJiaoHJ/easy-console-model.git"
   },
   "author": "hujiao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HuJiaoHJ/rcModel/issues"
+    "url": "https://github.com/HuJiaoHJ/easy-console-model/issues"
   },
-  "homepage": "https://github.com/HuJiaoHJ/rcModel#readme",
+  "homepage": "https://github.com/HuJiaoHJ/easy-console-model#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
