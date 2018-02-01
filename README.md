@@ -47,8 +47,19 @@ Easy Console 是一个H5页面调试工具，而 easy-console-model 用于获取
 ##### 安装
 
 ``` bash
-
+$ npm install easy-console-model
 ```
+
+##### 使用
+
+``` js
+import easyConsole from 'easy-console-model';
+
+// 注意，由于easyConsole数据中包含console数据，直接console.log(easyConsole)会形成死循环，可以通过JSON.stringify处理一下再打印出来
+console.log(JSON.stringify(easyConsole)); 
+```
+
+**easyConsole** 中 `data` 字段包括 `console`, `network`, `element`, `storage` 信息，提供 `updateData` 方法对数据进行更新（`console`, `network` 数据是实时更新的，`element`, `storage` 数据需要手动调用 `updateData` 方法进行更新）
 
 #### 实例
 
