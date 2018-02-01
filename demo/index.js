@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import easyConsole from '../lib';
+import easyConsole from '../dist/easy-console-model.min';
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';

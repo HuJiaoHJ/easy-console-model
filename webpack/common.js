@@ -5,6 +5,9 @@ const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin');
 const config = {
     output: {
         path: path.resolve(__dirname, '../dist/'),
+        library: 'easyConsole',
+        libraryTarget: 'umd',
+        umdNamedDefine: true,
         filename: '[name].js',
     },
     plugins: [

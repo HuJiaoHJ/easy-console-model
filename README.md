@@ -1,5 +1,9 @@
 # easy-console-model
 
+[![npm version](https://badge.fury.io/js/easy-console-model.svg)](https://badge.fury.io/js/easy-console-model)
+
+[![NPM](https://nodei.co/npm/easy-console-model.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/easy-console-model/)
+
 Easy Console 是一个H5页面调试工具，而 easy-console-model 用于获取调试信息，为调试工具提供数据
 
 #### 线上H5页面问题排查现状
@@ -37,6 +41,14 @@ Easy Console 是一个H5页面调试工具，而 easy-console-model 用于获取
 1、降低排查成本、简化排查过程、提高排查效率，一次问题排查：沟通、借手机、安装证书、抓包（时间：30min） → 生成调试页面 、扫描二维码、远程调试（时间：2min）
 
 2、无需借手机，可以直接远程排查
+
+#### 使用
+
+##### 安装
+
+``` bash
+
+```
 
 #### 实例
 

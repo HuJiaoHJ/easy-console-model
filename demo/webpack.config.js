@@ -24,14 +24,6 @@ const common = {
             loader: 'eslint-loader',
         }, {
             test: /\.[ej]s$/,
-            include: /node_modules\/@hfe\/timoo-/,
-            loader: 'babel-loader',
-        }, {
-            test: /\.[ej]s$/,
-            include: /node_modules\/hfe\/timoo-/,
-            loader: 'babel-loader',
-        }, {
-            test: /\.[ej]s$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
         }, {

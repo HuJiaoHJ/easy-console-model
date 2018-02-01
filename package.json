@@ -1,6 +1,6 @@
 {
   "name": "easy-console-model",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Easy Console 是一个H5页面调试工具，而 easy-console-model 用于获取调试信息，为调试工具提供数据",
   "main": "dist/easy-console-model.min.js",
   "scripts": {
